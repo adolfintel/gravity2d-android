@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gravity Simulator</string>
+    <string name="lowRes">Screen resolution is too low</string>
+    <string name="lowRes_continue">Continue anyway</string>
+    <string name="lowRes_exit">Quit</string>
+
+</resources>

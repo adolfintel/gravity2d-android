@@ -1,0 +1,24 @@
+GRAVITY SIMULATOR REDUX (ANDROID/LIBGDX PORT, v1.1)
+
+How to import:
+-Install JDK and Eclipse
+-Install Android SDK
+-Open SDK manager and download API20 and API15
+-Start Eclipse, create workspace and accept Android stuff
+-Install Android plugin for Eclipse (help > install new software > https://dl-ssl.google.com/android/eclipse/ > select all and install)
+-Install Gradle plugin for Eclipse (help > install new software > http://dist.springsource.com/snapshot/TOOLS/gradle/nightly > select all and install)
+-File > Import > Gradle > Gradle Project
+-Root folder is wherever you extracted the gravity2d folder
+-Click "Build Model"
+-Select all projects except the desktop one which isn't maintained
+-Click next/finish
+Now you'll have 3 projects in your workspace:
+-Gravity Simulator Redux-android contains the android launcher, the textures and little else
+-Gravity Simulator Redux-core contains all the game logic
+-gravity2d is just the folder (thanks Gradle, so useful!)
+
+
+Please REMEMBER that even if this is similar to the PC version, it's not exactly the same:
+-PC version runs at 100 SPS with a speed factor of 0.15, Android version runs at 60 SPS with a speed factor of 0.25 to compensate. This change was made to compensate the low speed of mobile processors (especially ARM ones, Intel Atoms are surprisingly fast). Basically we have less simulations per second at a higher speed so it runs as fast as the PC version but less precise.
+-PC version uses 64 bit floating point, Android version uses 32 bit floating point. This had to be done because ARM processors suck major ass with 64 bit floats. This causes all calculations to be less precise, especially when points are far away from the center of the simulation. Partial compatibility with double precision version has been implemented.
+-PC version uses 2 threads per core, Android version uses 1 thread per core because for some reason, Android lagged like hell with 2.

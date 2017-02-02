@@ -16,7 +16,7 @@ If you want to use it as a library or tinker with the code, download the project
 Multiplaform, Java SE 7
 
 ## Screenshots
-![Screenshot](http://adolfintel.com/gravity2d/android1.png)
+![Screenshot](http://fdossena.com/gravity2d/android1.png)
 
 ## License
 Copyright (C) 2015 Federico Dossena

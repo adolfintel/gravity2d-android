@@ -8,7 +8,8 @@ An N-Point Gravity Simulator is a realistic simulation in which all points attra
 This is the Android version, and uses LibGDX for the graphics.
 
 ## Download
-[Download from Google Play](https://play.google.com/store/apps/details?id=com.dosse.gravity2d.android)
+[Download from Google Play](https://play.google.com/store/apps/details?id=com.dosse.gravity2d.android)  
+[Download APK](https://downloads.fdossena.com/geth.php?r=gravity2d-apk)  
 
 If you want to use it as a library or tinker with the code, download the project and import it into Eclipse with ADT (this project was made before Android Studio).
 
